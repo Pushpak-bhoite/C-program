@@ -17,7 +17,7 @@ int main(){
     p=pow(rem,3) ;   
     printf("Power of five \t%d",p);
 
-    sum=sum+p;
+    sum=sum+p+1;
     no=no/10;
 
     rem = no%10;

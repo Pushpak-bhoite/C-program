@@ -1,20 +1,48 @@
-scanf("%d",&amt);
+//this is for 5 digit no ;
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int no ;
+    printf("Enter The no :");
+    scanf("%d",&no);
+    int orgnl=no;
+    int n,rem,temp,p,sum=0;
+    // suppose no=153
+    rem = no%10;
+    p=pow(rem,3) ;   
+    sum=sum+p;
+    no=no/10;
 
-    // printf("Notes of 500 : %d\n",amt/500);
-    // amt = amt%500;
-    // printf("Notes of 200 : %d\n",amt/200);
-    // amt = amt%200;
-    // printf("Notes of 100 : %d\n",amt/100);
-    // amt = amt%100;
-    //     printf("Notes of 50 : %d\n",amt/50);
-    // amt = amt%50;
-    //     printf("Notes of 20 : %d\n",amt/20);
-    // amt = amt%20;
-    //     printf("Notes of 10 : %d\n",amt/10);
-    // amt = amt%10;
+    rem = no%10;
+    p=pow(rem,3) ;   
+    printf("Power of five \t%d",p);
 
-    //     printf("Coins of 5 : %d\n",amt/5);
-    // amt = amt%5;
-    // printf("Coins of 2 : %d\n",amt/2);
-    // amt = amt%2;
-    // printf("Coins of 1 : %d \n",amt/1);
+    sum=sum+p;
+    no=no/10;
+
+    rem = no%10;
+    p=pow(rem,3) ;   
+    sum=sum+p;
+    no=no/10;
+
+    printf(" \n%d\t%d",orgnl,sum);
+
+    sum==orgnl?printf(" Yes Armstrong No") :printf("Not an Armstrong No") ;
+
+
+
+
+
+//if No = 153;
+    // int first = no/100 ;
+    // int sec = (no/10)%10;
+    // int third = no%10;
+    // int a=first*first*first;
+    // int b=sec*sec*sec;
+    // int c=third*third*third;
+    // int sum=a+b+c;
+    // int x=pow(sec,2);
+
+    // sum==no?printf(" Yes Armstrong No") :printf("Not an Armstrong No") ;
+   return 0;
+}
