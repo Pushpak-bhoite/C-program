@@ -13,5 +13,6 @@ int main()
 
     }
     printf("\ntotal no :%d", cnt);
+ 
     return 0;
 }
