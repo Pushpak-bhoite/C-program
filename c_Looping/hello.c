@@ -1,20 +1,20 @@
 #include <stdio.h>
 
 int main() {
-    int n, i, j;
+    int rows, i, j;
 
     printf("Enter the number of rows: ");
-    scanf("%d", &n);
+    scanf("%d", &rows);
 
-    for (i = 1; i <= n; i++) {
-        // Print spaces for alignment
-        for (j = 1; j <= n - i; j++) {
-            printf("-");
+    for (i = 1; i <= rows; i++) {
+        // Print spaces before the asterisks
+        for (j = 1; j < i; j++) {
+            printf(" ");
         }
 
-        // Print asterisks for the current row
-        for (j = 1; j <= 2 * i - 1; j++) {
-            printf("*");
+        // Print asterisks in the current row
+        for (j = i; j <= rows; j++) {
+            printf("* ");
         }
 
         // Move to the next line
