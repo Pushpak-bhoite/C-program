@@ -1,15 +1,8 @@
-#include <stdio.h>
-int main()
-{
-    int a = 6, b = 11, no, i = 1;
-    while (i)
-    {
-        i++;
-        if (i % a == 0 && i % b == 0)
-        {
-            no = i;
-            i = 0;
-        }
-    }
-    printf("LCM = %d", no);
+#include<conio.h>
+void main() 
+{     int a = 300, b=10, c = 20; 
+       if(!(a>=400)) 
+         b = 300; 
+         c = 200; 
+         printf ("b = %dc = %d", b,c);
 }
