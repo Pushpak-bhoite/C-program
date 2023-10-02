@@ -1,12 +1,11 @@
 #include <stdio.h>
 int main()
 {
-    int no = 6;
-    for (int i = 1; i <= no; i++)
+    for (int i = 1; i <= 5; i++)
     {
-        for (int j = no; j <= no; j++)
+        for (int j = 1 ; j <= 10; j++)
         {
-            if (i == j)
+            if (j>=6-i && j<=4+i)
             {
                 printf("*");
             }else{
