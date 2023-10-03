@@ -1,9 +1,5 @@
-#include <stdio.h>
-
-int main() {
-    int rows, i, j;
-    i=(1%2);
-    printf("%d",i);
-   
-    return 0;
-}
+         1
+       1  2
+      1     3
+     1       4
+    1  2  3 4 5
