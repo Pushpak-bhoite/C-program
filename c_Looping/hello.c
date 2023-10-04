@@ -1,5 +1,20 @@
-         1
-       1  2
-      1     3
-     1       4
-    1  2  3 4 5
+#include <stdio.h>
+int main()
+{
+    for (int i = 1; i <= 5; i++)
+    {
+        char ch = 64;
+        for (int j = 1; j <= 9; j++)
+        {
+            if(j<=i){
+              ch++;
+              printf("%c",ch);
+            }
+            if(j==i && ){
+              ch--;
+              printf("%c",ch);
+            }
+        }
+        printf("\n");
+    }
+}
