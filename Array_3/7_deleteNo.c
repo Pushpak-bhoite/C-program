@@ -11,7 +11,7 @@ int main()
     {
         if (no == a[i])
         {  cnt--;
-             for (int j = i; j < 5; j++)
+             for (int j = i; j < cnt; j++)
                     {
                         a[j] = a[j + 1];
                     }
