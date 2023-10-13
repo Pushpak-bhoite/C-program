@@ -65,20 +65,50 @@ int main()
         for (int i = 1; i <= no; i++)
         {
             int sum = 0;
-            int str = i, rem;
-            while (str)
-            {   
+            int no1 = i, rem;
+            while (no1)
+            {
                 int p = 1;
-                rem = str % 10;
-                str = str / 10;
-                for (int j = rem; j <= 1; j--)
+                rem = no1 % 10;
+                no1 = no1 / 10;
+                for (int j = rem; j >= 1; j--)
                 {
                     p = p * j;
                 }
                 sum = sum + p;
             }
+            if (sum == i)
+            {
+                printf("%d ", sum);
+            }
         }
-
+    case 5: // Armstrong number
+    {
+        int rem, temp = no, cnt = 0,sum=0,cnt1;
+        while (no)
+        {
+            no = no / 10;
+            cnt++;
+        }
+        no = temp;
+        while (no)
+        {
+            int p=1 ,cnt1=cnt;
+            rem = no % 10;
+            no = no / 10;
+            while(cnt1){
+                p=p*rem;
+                cnt1--;
+            }
+            sum=sum+p;
+        }
+        if(sum==temp){
+            printf("Armstrog");
+        }else{
+            printf("not Armstrong");
+        }
+        }
+        break;
     default:
         break;
     }
