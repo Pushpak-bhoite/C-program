@@ -5,9 +5,10 @@ int main(){
     // when we want to print array from starting index ,then formulae is:
     for (int i = 0; i <= 5; i++)
     {
-        printf("  %d ",&a[0]+(i));
+        printf("  %d ",&a[0]+(i*2));
 
     }
     
         printf("\n 0 = %d  1 = %d 2 = %d 2 = %d ",&a[0],&a[1],&a[2],&a[3]);
+        
 }

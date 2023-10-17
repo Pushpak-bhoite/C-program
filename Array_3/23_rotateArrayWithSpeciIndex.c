@@ -9,21 +9,20 @@ int main()
     for (int i = 0; i < 11; i++)
     {
         if (i > no-1){  //4>3
+          //5
             printf("%d ",a[i]);
             b[i-no]=a[i];
             cnt++;
         }
         
     }
-
-    for (int i = 0; i < 11; i++)
+    for (int i = 0; i < 11; i++) 
     {
         if (i < no){   //0<4
             printf("%d ",a[i]);
             b[cnt+i]=a[i];
         }
-        
-    }
+    }               
 
     // printing of array
     printf("\n");

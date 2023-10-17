@@ -1,22 +1,29 @@
 #include <stdio.h>
 int main()
 {
-    int a[11] = {0, 3, 6, 9, 12, 14, 18, 20, 22, 25, 27};
-    int b[11];
-    for (int i = 0; i < 11; i++)
+    int a[5] = {1,2,3,4,5};
+    int cnt = 0, b[5], c[5];
+    int  ev=0,od=0;
+    for (int i = 0; i < 5; i++)
     {
-        if (i > 3)
+        if (a[i] % 2 == 0)
         {
-            b[i - 4] = a[i];
-        }
-        else
-        {
-            b[i + 7] = a[i];
+            b[ev]=a[i];
+            ev++;
+        }else{
+            
+            c[od]=a[i];
+            od++;
         }
     }
-    // printing of array
-    for (int i = 0; i < 11; i++)
+    for(int i=0;i<ev;i++)
     {
-        printf("%d ", b[i]);
+        printf("%d ",b[i]);
     }
+    printf("\n");
+     for(int i=0;i<od;i++)
+    {
+        printf("%d ",c[i]);
+    }
+    
 }
