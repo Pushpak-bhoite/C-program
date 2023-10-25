@@ -17,7 +17,7 @@ int main()
 
     printf("Ente no \t");
     scanf("%d", &no);
-    for (int i = 0; i < 7; i++)
+    for (int i = 0; i < rng; i++)
     {
         if (no == a[i])
         {
@@ -31,9 +31,9 @@ int main()
             c = a[i];
             break;
         }
-        else if (i == 6)
+        else if (no > a[rng-1])
         {
-            f = a[i];
+            f = a[rng-1];
             c = -1;
             break;
         }

@@ -1,29 +1,74 @@
 #include <stdio.h>
 int main()
 {
-    int a[5] = {1,2,3,4,5};
-    int cnt = 0, b[5], c[5];
-    int  ev=0,od=0;
-    for (int i = 0; i < 5; i++)
+
+    int n=6;
+    // printf("enter the range of array:");
+    // scanf("%d", &n);
+
+    int  i, c, f, j, temp;
+    int a[6]={1,3,5,7,8,9};
+    // printf("Enter %d element of array:",n);
+    // for (i = 0; i < n; i++)
+    // {
+    //     scanf("%d", &a[i]);
+    // }
+
+    // for (i = 0; i < n; i++)
+    // {
+    //     for (j = i + 1; j < n; j++)
+    //     {
+    //         if (a[i] > a[j])
+    //         {
+    //             temp = a[i];
+    //             a[i] = a[j];
+    //             a[j] = temp;
+    //         }
+    //     }
+    // }
+
+    //	printf("\nenter the number:");
+    //	scanf("%d",&no);
+
+    printf("sorted array:");
+    for (i = 0; i < n; i++)
     {
-        if (a[i] % 2 == 0)
+        printf("%4d", a[i]);
+    }
+
+    int no = 0;
+    for (no = 0; no <= 10; no++)
+    {
+        for (i = 0; i < n; i++)
         {
-            b[ev]=a[i];
-            ev++;
-        }else{
+
+            if (a[0] > no)
+            {
+                c = a[i];
+                f = -1;
+                break;
+            }
+            else if (a[n - 1] < no)
+            {
+                c = -1;
+                f = a[n - 1];
+                break;
+            }
+            else if (a[i] == no)
+            {
+                c = a[i];
+                f = a[i];
+            }
+            else 
+            {
+                c = a[i + 1];
+                f = a[i];
+                break;
+            }
             
-            c[od]=a[i];
-            od++;
         }
+        printf("\nnumber:%d --ceiling=%d floar=%d", no, c, f);
     }
-    for(int i=0;i<ev;i++)
-    {
-        printf("%d ",b[i]);
-    }
-    printf("\n");
-     for(int i=0;i<od;i++)
-    {
-        printf("%d ",c[i]);
-    }
-    
+
+    return 0;
 }

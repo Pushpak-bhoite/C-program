@@ -32,9 +32,9 @@ int main()
                 printf("Number %d ceiling is: %d floor is : %d\n", i, c, f);
                 break;
             }
-            else if (j == 5)
+            else if (i>a[j-1])
             {
-                f = a[j];
+                f = a[5];
                 c = -1;
                 printf("Number %d ceiling is: %d floor is : %d\n", i, c, f);
                 break;

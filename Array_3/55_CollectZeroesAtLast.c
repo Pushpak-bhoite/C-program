@@ -1,3 +1,4 @@
+//collect zeroes at the end
 #include <stdio.h>
 int main()
 {
