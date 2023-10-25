@@ -4,7 +4,6 @@ int main(){
     printf("%d ",(a));
     printf("%d ",(a+(5)));
 
-
     for (int  i = 0; i < 5; i++)
     {
     printf("%d ",(&a[0]+(5)));

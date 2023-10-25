@@ -8,7 +8,7 @@ int main()
     printf("Enter Values ");
     for (int i = 0; i < 5; i++)
     {
-        scanf("%d",&*(ptr+i));
+        scanf("%d",(ptr+i));
     }
 
     printf("\n reversed array \n");

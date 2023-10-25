@@ -1,7 +1,6 @@
 #include<stdio.h>
 int main(){
-    int a[5];
-    int *ptr,b[5];
+    int a[5], *ptr,b[5];
     ptr=a;
     printf("Enter numbers\n");
     for (int i = 0; i < 5 ; i++)
