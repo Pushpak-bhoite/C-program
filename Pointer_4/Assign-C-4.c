@@ -12,21 +12,21 @@ int  main(){
     ptr=(int*)malloc(sizeof(int)*n);
     for (int i = 0; i < n; i++)
     {
-        scanf("%d",&(*(ptr+i)));
+        scanf("%d",&ptr[i]);
     }
 
     for (int i = 0; i < n; i++)
     {
         if (ptr[i]%2==0)
         {
-            *(ev+e)=ptr[i];
-            // ev=(int*)realloc(ev,sizeof(int)*1);
-            printf("\n %d %d ",*ev,ptr[i]);
             e++;
+            ev=(int*)realloc(ev,sizeof(int)*e);
+            *(ev+e)=ptr[i];
+            // printf("\n %d %d ",*ev,ptr[i]);
         }else{
-             *(od+o)=ptr[i];
-            // od=(int*)realloc(od,sizeof(int)*1);
             o++;
+            od=(int*)realloc(od,sizeof(int)*o);
+             *(od+o)=ptr[i];
         }
     }
     printf("\nEven\n");
