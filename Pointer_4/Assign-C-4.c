@@ -3,7 +3,7 @@
 #include<stdlib.h>
 
 int  main(){
-    int *ptr,e=0,o=0,n;
+    int *ptr,e=0,o=0,n,cnt1=2,cnt2=2;
     int *ev,*od;
     ev=(int*)malloc(sizeof(int)*1);
     od=(int*)malloc(sizeof(int)*1);
@@ -19,16 +19,18 @@ int  main(){
     {
         if (ptr[i]%2==0)
         {
+            ev=(int*)realloc(ev,sizeof(int)*(e+1));
+            ev[e]=ptr[i];
             e++;
-            ev=(int*)realloc(ev,sizeof(int)*e);
-            *(ev+e)=ptr[i];
-            // printf("\n %d %d ",*ev,ptr[i]);
         }else{
+            od=(int*)realloc(od,sizeof(int)*(o+1));
+             od[o]=ptr[i];
             o++;
-            od=(int*)realloc(od,sizeof(int)*o);
-             *(od+o)=ptr[i];
         }
     }
+            // ev=(int*)realloc(ev,sizeof(int)*e);
+            // od=(int*)realloc(od,sizeof(int)*o);
+  
     printf("\nEven\n");
     for (int i = 0; i<e; i++)
     {
