@@ -1,27 +1,27 @@
 #include <stdio.h>
-void neon(int);
+int neon(int);
 int main()
 {
     int a = 9;
-    neon(a);
+    int ans,t=a;
+    a = a * a;
+    ans=neon(a);
+    if(ans==t){
+        printf("Neon");
+    }else{
+        printf("Not");
+    }
 }
 
 int sq, rem, sum = 0;
-void neon(int a)
+int neon(int a)
 {
-    sq = a * a;
-    while (sq)
+    if (a)
     {
-        rem = sq% 10;
+        rem = a% 10;
         sum = sum + rem;
-        sq = sq / 10;
+        a = a / 10;
+        neon(a);
     }
-    if (a == sum)
-    {
-        printf("neon");
-    }
-    else
-    {
-        printf("Not");
-    }
+    return sum;
 }
