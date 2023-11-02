@@ -3,7 +3,7 @@ int i = 2, flag = 1;
 #include <stdio.h>
 int main()
 {
-    int no = 12,ans;
+    int no = 10,ans;
     ans = prime(no, i);
     if (ans)
     {
@@ -23,6 +23,7 @@ int prime(int a, int i)
            return 0;
         }
             prime(a, ++i);
-    }
+    }else{
    return 1;
+    }
 }
