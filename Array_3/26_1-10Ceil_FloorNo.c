@@ -15,30 +15,28 @@ int main()
             {
                 f = a[j];
                 c = a[j];
-                printf("Number %d ceiling is: %d floor is : %d\n", i, c, f);
-                break;
+                // break;
             }
             else if (i < a[0])
             {
                 f = -1;
-                c = a[j];
-                printf("Number %d ceiling is: %d floor is : %d\n", i, c, f);
-                break;
+                c = a[0];
+                // break;
             }
             else if (i > a[j] && i < a[j + 1])
             {
                 f = a[j];
                 c = a[j + 1];
-                printf("Number %d ceiling is: %d floor is : %d\n", i, c, f);
-                break;
+                // break;
             }
-            else if (i>a[j-1])
+            else if (i > a[5])
             {
                 f = a[5];
                 c = -1;
-                printf("Number %d ceiling is: %d floor is : %d\n", i, c, f);
-                break;
+                // break;
             }
         }
+                printf("Number %d ceiling is: %d floor is : %d\n", i, c, f);
+
     }
 }

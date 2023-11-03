@@ -9,7 +9,6 @@ int main()
     //     str1[i] = str[i];
     // }
 
-
     strcat(str1, str);
-    printf("*%s ", str1);
+    printf("%s ", str1);
 }
