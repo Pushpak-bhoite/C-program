@@ -20,21 +20,21 @@ int main()
             }
         }
     }
-    char max;
-    int cnt = 1,no=0;
+    char ch;
+    int cnt = 1,max=0;
     printf("%s ", str);
     for (int i = 0; i < len; i++)
     {
         if (str[i] == str[i + 1])
         {
             cnt++;
-            if (cnt > no)
+            if (cnt > max)
             {
-                max = str[i];
-                no=cnt;
+                ch = str[i];
+                max=cnt;
             }
         }else
         cnt=1;
     }
-    printf("\n %c occures %d times", max, no);
+    printf("\n %c occures %d times", ch, max);
 }
