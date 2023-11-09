@@ -7,7 +7,6 @@ int main(){
     // {
     //     str1[i]=str[i];
     // }
-
     // printf("%s ",str1);
 
     strcpy(str1,str);
