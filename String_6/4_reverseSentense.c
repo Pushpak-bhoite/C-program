@@ -1,30 +1,36 @@
-#include<stdio.h>
-#include<stdlib.h>
-void reverse(char [])
-int main(){
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
+// void reverse(char[]);
+int main()
+{
+    char a[200]={"    Rev the string "}, res[200]="", word[50];
+    int i, j;
+    printf("Enter a String \n");
+    // gets(a);
+    printf("Orignal string is = %s \n", a);
+    strcat(a,"* ");         //space added at last 
+    j=0;
+    for (i = 0 ; a[i] != '\0'; i++)
+    {
+        if(a[i]==' '){
+            word[j]='\0';
+            strrev(word);
+            strcat(res,word);
+            strcat(res," ");
+            j=0;
+        }
+        else{
+            word[j]=a[i];
+            j++;
+        }
+    }
+
+    printf("Reverse of string = %s \n", res);
+    puts(res);
+    return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // #include <stdio.h>
 // #include <string.h>
@@ -36,7 +42,7 @@ int main(){
 //     {
 //         if (ch[i] != ' ') // && ch[i+1] != ' '
 //         {
-    
+
 //             int start = i, flag = 1 , cnt = 0;;
 //             for (int j = start; (ch[j] != '\0' && flag); j++)
 //             {
