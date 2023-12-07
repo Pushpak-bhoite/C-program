@@ -1,11 +1,13 @@
+// *** we have to use single quote '' for letter and double " "for words or sentences
+
 #include <stdio.h>
 int main()
 {
 
-    char str[30];//={" Atharva Bhapkar "};
+    char str[30]={" Atharva Bhapkar "};
     printf("Enter Name :");
     // scanf("%s",&str);
-    gets(str);
+    // gets(str);
     int flag = 1;
 	int i;
     for (i = -1; str[i] != 0; i++)
