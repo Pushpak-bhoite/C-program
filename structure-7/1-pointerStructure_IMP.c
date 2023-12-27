@@ -17,6 +17,6 @@ int main()
     printf("\nEnter choice 1.add emp 2. dislplay 3. search \n");
 
     printf("id\tname\tsal\n");
-    printf("%d\t%s\t%d\n", p->id, (*p).name, p[0].sal); // look over here (e=*p) or (*p=p->) or (p->=p[0])
+    printf("%d\t%s\t%d\n", p->id, (*p).name, p[0].sal); // throw glance over here (e=*p) or (*p=p->) or (p->=p[0])
     // at the end e=*p=p->p[0]
 }

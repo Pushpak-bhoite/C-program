@@ -1,3 +1,5 @@
+//Note we dont need to put" & " while taking name string from user
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -63,7 +65,7 @@ int main()
                     }
                     size--;
                     printf("Deleted");
-                    i--;
+                    i--;//this is for to delete data of other same name  
                 }
             }
             break;
