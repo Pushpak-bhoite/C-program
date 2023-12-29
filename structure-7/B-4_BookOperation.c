@@ -6,15 +6,14 @@ struct Book
     int price;
     char auther[20];
 };
-int size;
+int size=2;
 int main()
 {
     struct Book b[10];
     int choice1, choice2,sid;
-    size=2;
     do
     {
-        printf("\nEnter choice \n1.add \n2.display \n3.dosplayt acco to price range \n4.search & update datails \n6.Delete \n7.count books acco to details \n8.sort \n9.try again \n10.exit tp 0\n");
+        printf("\nEnter choice \n1.add \n2.display \n3.displayt acco to price range \n4.search & update datails \n5.Delete \n6.sort \n9.try again \n10.exit tp 0\n");
         scanf("%d", &choice1);
         switch (choice1)
         {
@@ -59,7 +58,7 @@ int main()
                 }
             }
         case 5:
-            printf("\nEnter Id\t")    ;
+            printf("\nEnter Id to delete \t")    ;
             scanf("%d",&sid);
             for (int i = 0; i <= size; i++)
             {
@@ -73,7 +72,22 @@ int main()
             }
             size --;
             break;
-
+        case 6:
+            for (int i = 0; i < size; i++)
+            {
+                for (int j = i+1; i < size; i++)
+                {
+                    if (b[i].id>b[j].id)
+                    {
+                        struct Book temp = b[i];
+                        b[i]=b[j];
+                        b[j]=temp;
+                    }
+                    
+                }
+            }
+            printf("\nData sorted ");
+            break;
         default:
             printf("Wrong choice ");
 
